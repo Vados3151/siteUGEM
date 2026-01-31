@@ -1,0 +1,28 @@
+<?php
+
+$name    = htmlspecialchars($_POST['name']);
+$email   = htmlspecialchars($_POST['email']);
+$phone   = htmlspecialchars($_POST['phone']);
+$product = htmlspecialchars($_POST['product']);
+
+$to = "shomaxov2018@gmail.com";
+
+$subject = "Новая заявка с сайта ЮЖЭМ";
+
+$message = "
+Новая заявка:
+
+Имя: $name
+Телефон: $phone
+Email: $email
+Продукция: $product
+";
+
+$headers = "From: site@".$_SERVER['SERVER_NAME']."\r\n";
+$headers .= "Content-type: text/plain; charset=utf-8\r\n";
+
+mail($to, $subject, $message, $headers);
+
+header("Location: /?success=1");
+exit();
+?>

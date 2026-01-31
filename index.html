@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ООО «ЮЖЭМ» — доставка нерудных материалов</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Основные стили -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Шрифт -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+</head>
+<body>
+
+<!-- Шапка -->
+<header class="header">
+  <div class="container header-row">
+    <div class="logo">ООО «ЮЖЭМ»</div>
+
+    <nav class="nav">
+      <a href="#products">Продукция</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#about">О нас</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <a class="phone" href="tel:+79064703050">+7 (906) 470-30-50</a>
+  </div>
+</header>
+
+<!-- Первый экран -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <h1>Доставка нерудных материалов</h1>
+
+    <p>
+      ПГС · Песок · Щебень · Гравий<br>
+      Ставропольский край · КМВ · КБР
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#contacts" class="btn primary">Связаться с нами</a>
+      <a href="#products" class="btn secondary">Продукция</a>
+    </div>
+  </div>
+</section>
+
+<!-- Продукция -->
+<section id="products" class="section">
+  <div class="container">
+    <h2>Наша продукция</h2>
+
+    <p class="section-desc">
+      Реализуем и доставляем инертные строительные материалы напрямую,
+      без посредников. На всю продукцию выдаём паспорта качества.
+    </p>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-img" style="background-image:url('assets/products/pesok.jpg')"></div>
+        <h3>Песок</h3>
+        <p>Фракции: 0–5, 0–10</p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img" style="background-image:url('assets/products/shheben.jpg')"></div>
+        <h3>Щебень</h3>
+        <p>Различные фракции</p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img" style="background-image:url('assets/products/graviy.jpg')"></div>
+        <h3>Гравий</h3>
+        <p>Фракции: 40–100, 80–220</p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img" style="background-image:url('assets/products/pgs.jpg')"></div>
+        <h3>ПГС</h3>
+        <p>0–20, 0–40, 0–80, 0–150</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Доставка -->
+<section id="delivery" class="section light">
+  <div class="container">
+    <h2>Доставка</h2>
+
+    <div class="delivery-grid">
+      <ul class="list">
+        <li>Доставка по городам КМВ</li>
+        <li>По Ставропольскому краю</li>
+        <li>По Кабардино-Балкарии</li>
+        <li>Радиус доставки до 200 км</li>
+        <li>Собственный автопарк</li>
+        <li>До 1000 тонн в сутки</li>
+      </ul>
+
+      <div class="delivery-box">
+        <p>
+          Стоимость доставки и материала рассчитывается индивидуально.
+          Мы работаем <strong>24/7</strong>.
+          Чтобы узнать цену — свяжитесь с нами по телефону или электронной почте.
+        </p>
+
+        <a href="#contacts" class="btn primary">Узнать стоимость</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== БЛОК ЗАЯВКИ ===== -->
+<section class="section light order-block">
+  <div class="container">
+
+    <h2 class="order-title">
+      Узнать цену на ПГС, песок, щебень или гравий
+    </h2>
+
+    <p class="order-subtitle">
+      Оставьте заявку — логист свяжется с вами, уточнит объём, адрес доставки
+      и подготовит актуальное коммерческое предложение.
+      Работаем ежедневно.
+    </p>
+
+    <form class="order-form" action="send.php" method="POST">
+
+      <input type="text" name="name" placeholder="Ваше имя" required>
+
+      <input type="email" name="email" placeholder="Ваш E-mail">
+
+      <input type="tel" name="phone" id="phone" placeholder="+7 (___) ___-__-__" required>
+
+      <select name="product" required>
+        <option value="">Выберите продукцию</option>
+        <option>Песок</option>
+        <option>Щебень</option>
+        <option>Гравий</option>
+        <option>ПГС</option>
+      </select>
+
+      <button type="submit" class="btn primary">Отправить заявку</button>
+
+    </form>
+
+    <p class="order-note">
+      Отправляя заявку, вы соглашаетесь на обработку персональных данных
+      в соответствии с <a href="#">политикой конфиденциальности</a>.
+    </p>
+
+  </div>
+</section>
+
+<!-- О нас -->
+<section id="about" class="section">
+  <div class="container">
+    <h2>О нас</h2>
+
+ <div class="about-grid">
+  <div class="about-main">
+    <h3>Надежность. Профессионалы своего дела.</h3>
+    <p>
+      Мы работаем на рынке нерудных материалов в Ставропольском крае и по КМВ
+      более 10 лет.
+    </p>
+    <p>
+      Осуществляем доставку инертных строительных материалов в города КМВ,
+      по Ставропольскому краю и Кабардино-Балкарии (до 200 км).
+      Располагаем возможностью доставки собственным транспортом
+      до 1000 тонн в сутки.
+    </p>
+  </div>
+
+  <div class="about-item">
+    <h3>Гибкая система работы.</h3>
+    <p>
+      Мы работаем с юридическими лицами и предпринимателями.
+      Предлагаем удобную организацию расчётов и индивидуальный подход
+      к каждому клиенту.
+    </p>
+  </div>
+
+  <div class="about-item">
+    <h3>Качество.</h3>
+    <p>
+      Продукция проходит регулярные испытания на соответствие ГОСТ.
+      На всю продукцию выдаём паспорта качества.
+    </p>
+  </div>
+
+  <p class="about-note">
+    В ООО «ЮЖЭМ» проведена специальная оценка условий труда
+    в соответствии с требованиями Федерального закона
+    от 28.12.2013 №426-ФЗ «О специальной оценке условий труда».
+  </p>
+  </div>
+</div>
+</section>
+
+<!-- БЛОК ЗАЯВКИ -->
+<section class="section light order-block">
+  <div class="container">
+
+    <h2 class="order-title">
+      Узнать цену на ПГС, песок, щебень или гравий
+    </h2>
+
+    <p class="order-subtitle">
+      Оставьте заявку — логист свяжется с вами, уточнит объём, адрес доставки
+      и подготовит актуальное коммерческое предложение.
+      Работаем ежедневно.
+    </p>
+
+    <form class="order-form" action="send.php" method="POST">
+
+      <input type="text" name="name" placeholder="Ваше имя" required>
+
+      <input type="email" name="email" placeholder="Ваш E-mail">
+
+      <input type="tel" name="phone" id="phone" placeholder="+7 (___) ___-__-__" required>
+
+      <select name="product" required>
+        <option value="">Выберите продукцию</option>
+        <option>Песок</option>
+        <option>Щебень</option>
+        <option>Гравий</option>
+        <option>ПГС</option>
+      </select>
+
+      <button type="submit" class="btn primary">Отправить заявку</button>
+
+    </form>
+
+    <p class="order-note">
+      Отправляя заявку, вы соглашаетесь на обработку персональных данных
+      в соответствии с <a href="#">политикой конфиденциальности</a>.
+    </p>
+
+  </div>
+</section>
+
+<!-- Карта -->
+<section class="section light">
+  <div class="container">
+    <h2>Мы здесь</h2>
+
+    <div class="map-grid">
+      <div class="map-info">
+        <p class="map-text">
+          Располагаем возможностью доставки инертных материалов
+          собственным транспортом по Ставропольскому краю, КМВ и КБР.
+          Объём перевозок — до <strong>1000 тонн в сутки</strong>.
+        </p>
+
+        <a
+          class="btn primary"
+          target="_blank"
+          href="https://www.google.com/maps/dir/?api=1&destination=Ставропольский край, ст. Марьинская, ул. Победы, 45Г"
+        >
+          Построить маршрут
+        </a>
+
+      </div>
+
+      <div class="map-card">
+        <iframe
+          src="https://www.google.com/maps?q=Ставропольский край, ст. Марьинская, ул. Победы, 45Г&output=embed"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Контакты -->
+<section id="contacts" class="section dark">
+  <div class="container contacts-grid">
+    <div class="contacts-left">
+      <h2>Контакты</h2>
+
+      <p class="company-title"><strong>ООО «ЮЖЭМ»</strong></p>
+      <p>ИНН 2609021970<br>ОГРН 1025600405351</p>
+      <p>Ставропольский край,<br>ст. Марьинская, ул. Победы, 45Г</p>
+      <p><strong>Генеральный директор:</strong><br>Коробова Евгения Ивановна</p>
+    </div>
+
+    <div class="contacts-right">
+      <p class="spacer"></p>
+
+      <p>
+        Наши специалисты готовы ответить на ваши вопросы
+        в рабочее время:
+      </p>
+
+      <p>
+        Логист:<br>
+        <a href="tel:+79064703050">+7 (906) 470-30-50</a>
+      </p>
+
+      <p>
+        Бухгалтер:<br>
+        <a href="tel:+79614905020">+7 (961) 490-50-20</a>
+      </p>
+
+      <p>
+        Email:<br>
+        <a href="mailto:ugem85@mail.ru">ugem85@mail.ru</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  © ООО «ЮЖЭМ». Все права защищены.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
